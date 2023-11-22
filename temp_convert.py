@@ -11,7 +11,7 @@ def fahrenheit():
     except ValueError:
         print(f"{user_temp} is not an integer.")
     else:
-        fahrenheit_convert = (9 / 5) * user_temp + 32
+        fahrenheit_convert = round((9 / 5) * user_temp + 32, 2)
         print(f"{user_temp}°C is equal to {fahrenheit_convert}°F")
 
 
